@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Library]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Name] VARCHAR(64) NOT NULL,
+	[Owner] VARCHAR(64) NOT NULL,
+	[Region] VARCHAR(64) NOT NULL,
+	[City] VARCHAR(64) NOT NULL,
+	[PostalCode] VARCHAR(16) NOT NULL,
+	[HouseNumber] VARCHAR(8) NOT NULL
+)

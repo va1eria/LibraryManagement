@@ -27,18 +27,18 @@ namespace LibraryManagement
 
     class Book
     {
-        string titel, isbn;
+        string title, isbn;
         List<Author> authors;
         Category category;
 
-        public string Titel 
+        public string Title 
         { 
-            get => titel;
+            get => title;
             private set
             {
                 if (!string.IsNullOrWhiteSpace(value) && value.Length <= 255)
                 {
-                    titel = value;
+                    title = value;
                 }
                 else
                 {
@@ -64,9 +64,9 @@ namespace LibraryManagement
         internal List<Author> Authors { get => authors;}
         internal Category Category { get => category; private set => category = value; }
 
-        public Book(string titel, string isbn, Category category)
+        public Book(string title, string isbn, Category category)
         {
-            Titel = titel;
+            Title = title;
             Isbn = isbn;
             Category = category;
             authors = new List<Author>();
@@ -74,7 +74,7 @@ namespace LibraryManagement
 
         public override string ToString()
         {
-            return $"{titel} - {authors}";
+            return $"{title} - {authors}";
         }
     }
 }
